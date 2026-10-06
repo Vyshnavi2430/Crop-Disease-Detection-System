@@ -1,0 +1,137 @@
+# ============================================================
+# KrishiDrishti AI — Comprehensive .gitignore for GitHub
+# ============================================================
+
+# ------------------------------------------------------------
+# 1. Dependencies & Package Managers
+# ------------------------------------------------------------
+node_modules/
+*/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+
+# ------------------------------------------------------------
+# 2. Python Virtual Environments & Bytecode
+# ------------------------------------------------------------
+ml/.venv/
+ml/venv/
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*/__pycache__/
+**/*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ------------------------------------------------------------
+# 3. Environment Variables & Secrets (CRITICAL FOR GITHUB)
+# ------------------------------------------------------------
+.env
+.env.*
+*.env
+backend/.env
+client/.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Always track example templates so new developers can configure the app
+!.env.example
+!*.env.example
+!backend/.env.example
+!client/.env.example
+
+# ------------------------------------------------------------
+# 4. Production Build & Vite Caches
+# ------------------------------------------------------------
+dist/
+client/dist/
+build/
+client/build/
+.vite/
+client/.vite/
+*.tsbuildinfo
+.eslintcache
+
+# ------------------------------------------------------------
+# 5. Runtime Uploads & Generated Heatmaps
+# Keep directory structure with .gitkeep but ignore uploaded files
+# ------------------------------------------------------------
+backend/uploads/*
+!backend/uploads/.gitkeep
+!backend/uploads/heatmaps/
+backend/uploads/heatmaps/*
+!backend/uploads/heatmaps/.gitkeep
+
+# ------------------------------------------------------------
+# 6. Large Datasets & Temporary ML Checkpoints
+# (Trained plant_disease_model.pth is 6.2MB and is kept for out-of-the-box inference)
+# ------------------------------------------------------------
+ml/dataset/
+ml/plantvillage/
+ml/data/
+dataset/
+PlantVillage/
+*.zip
+*.tar.gz
+*.tgz
+ml/models/*_test.pth
+ml/models/*_checkpoint.pth
+
+# ------------------------------------------------------------
+# 7. Operating System Artifacts
+# ------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ------------------------------------------------------------
+# 8. Editor & IDE Settings
+# ------------------------------------------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ------------------------------------------------------------
+# 9. Logs, Coverage & Temporary Scratch
+# ------------------------------------------------------------
+logs/
+*.log
+coverage/
+.nyc_output/
+scratch/
+.gemini/
+.antigravity-ide/

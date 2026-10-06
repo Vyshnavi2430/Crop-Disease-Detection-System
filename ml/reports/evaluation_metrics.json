@@ -1,0 +1,178 @@
+{
+    "model_name": "MobileNetV3-Small",
+    "image_size": 224,
+    "total_validation_samples": 2251,
+    "overall_accuracy": 96.58,
+    "macro_precision": 0.9567,
+    "macro_recall": 0.9658,
+    "macro_f1_score": 0.9604,
+    "weighted_f1_score": 0.9657,
+    "per_class_metrics": {
+        "Pepper,_bell___Bacterial_spot": {
+            "precision": 0.9045,
+            "recall": 1.0,
+            "f1_score": 0.9499,
+            "sample_count": 199
+        },
+        "Pepper,_bell___healthy": {
+            "precision": 1.0,
+            "recall": 0.9426,
+            "f1_score": 0.9704,
+            "sample_count": 296
+        },
+        "Potato___Early_blight": {
+            "precision": 0.985,
+            "recall": 0.985,
+            "f1_score": 0.985,
+            "sample_count": 200
+        },
+        "Potato___Late_blight": {
+            "precision": 0.9409,
+            "recall": 0.955,
+            "f1_score": 0.9479,
+            "sample_count": 200
+        },
+        "Potato___healthy": {
+            "precision": 0.9091,
+            "recall": 1.0,
+            "f1_score": 0.9524,
+            "sample_count": 30
+        },
+        "Tomato___Bacterial_spot": {
+            "precision": 0.9884,
+            "recall": 0.9977,
+            "f1_score": 0.993,
+            "sample_count": 426
+        },
+        "Tomato___Early_blight": {
+            "precision": 0.9402,
+            "recall": 0.865,
+            "f1_score": 0.901,
+            "sample_count": 200
+        },
+        "Tomato___Late_blight": {
+            "precision": 0.9455,
+            "recall": 0.9529,
+            "f1_score": 0.9492,
+            "sample_count": 382
+        },
+        "Tomato___healthy": {
+            "precision": 0.9968,
+            "recall": 0.9937,
+            "f1_score": 0.9953,
+            "sample_count": 318
+        }
+    },
+    "confusion_matrix": [
+        [
+            199,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            16,
+            279,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            2,
+            0,
+            197,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+        ],
+        [
+            0,
+            0,
+            2,
+            191,
+            3,
+            0,
+            0,
+            4,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            30,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            425,
+            1,
+            0,
+            0
+        ],
+        [
+            3,
+            0,
+            1,
+            4,
+            0,
+            4,
+            173,
+            15,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            8,
+            0,
+            0,
+            10,
+            364,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            316
+        ]
+    ],
+    "classes": [
+        "Pepper,_bell___Bacterial_spot",
+        "Pepper,_bell___healthy",
+        "Potato___Early_blight",
+        "Potato___Late_blight",
+        "Potato___healthy",
+        "Tomato___Bacterial_spot",
+        "Tomato___Early_blight",
+        "Tomato___Late_blight",
+        "Tomato___healthy"
+    ]
+}

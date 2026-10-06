@@ -1,0 +1,15 @@
+{
+  "name": "krishidrishti-ai",
+  "version": "3.0.0",
+  "description": "KrishiDrishti AI 3.0 — Multilingual Voice-Enabled Smart Farming Assistant",
+  "scripts": {
+    "dev": "node -e \"console.log('Use npm run backend and npm run client')\"",
+    "backend": "cd backend && node server.js",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.0",
+    "vite": "^5.2.11"
+  }
+}

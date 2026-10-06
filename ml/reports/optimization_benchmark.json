@@ -1,0 +1,21 @@
+{
+    "architecture": "MobileNetV3-Small",
+    "benchmark_samples": 500,
+    "fp32_baseline": {
+        "model_size_mb": 5.95,
+        "avg_cpu_latency_ms": 9.33,
+        "validation_accuracy": 96.0,
+        "macro_f1_score": 0.9592
+    },
+    "int8_quantized": {
+        "model_size_mb": 4.24,
+        "avg_cpu_latency_ms": 9.75,
+        "validation_accuracy": 96.0,
+        "macro_f1_score": 0.9592
+    },
+    "comparison": {
+        "size_reduction_percent": "28.74%",
+        "latency_change_percent": "4.5%",
+        "accuracy_difference_percent": "0.0%"
+    }
+}
